@@ -1,6 +1,6 @@
-var Shopper = require('./Shopper');
+const Shopper = require('./Shopper');
 
-var scout = new Shopper();
+const scout = new Shopper();
 scout.addItemToList('camping knife');
 scout.addItemToList('tent');
 scout.addItemToList('backpack');

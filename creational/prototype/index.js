@@ -1,10 +1,10 @@
-var scout_prototype = require('./scout_prototype');
+const scout_prototype = require('./scout_prototype');
 
-var alex = scout_prototype.clone();
+const alex = scout_prototype.clone();
 alex.name = 'Alex Banks';
 alex.addItemToList('slingshot');
 
-var eve = scout_prototype.clone();
+const eve = scout_prototype.clone();
 eve.name = 'Eve Porcello';
 eve.addItemToList('reading light');
 

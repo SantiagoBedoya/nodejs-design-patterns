@@ -1,17 +1,17 @@
-var PersonBuilder = require('./PersonBuilder');
+const PersonBuilder = require('./PersonBuilder');
 
 // Employees
-var sue = new PersonBuilder('Sue').makeEmployee().makeManager(60).build();
-var bill = new PersonBuilder('Bill').makeEmployee().makePartTime().build();
-var phil = new PersonBuilder('Phil').makeEmployee().build();
+const sue = new PersonBuilder('Sue').makeEmployee().makeManager(60).build();
+const bill = new PersonBuilder('Bill').makeEmployee().makePartTime().build();
+const phil = new PersonBuilder('Phil').makeEmployee().build();
 
 // Shoppers
-var charles = new PersonBuilder('Charles')
+const charles = new PersonBuilder('Charles')
     .withMoney(500)
     .withList(['jeans', 'sunglasses'])
     .build();
 
-var tabbitha = new PersonBuilder('Tabbitha').withMoney(1000).build();
+const tabbitha = new PersonBuilder('Tabbitha').withMoney(1000).build();
 
 console.log( sue.toString() );
 console.log( charles.toString() );

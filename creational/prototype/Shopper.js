@@ -22,8 +22,8 @@ class Shopper {
     }
 
     clone() {
-        var proto = Object.getPrototypeOf(this);
-        var cloned = Object.create(proto);
+        const proto = Object.getPrototypeOf(this);
+        const cloned = Object.create(proto);
 
         cloned._name = this._name;
         cloned._shoppingList = [...this._shoppingList];
